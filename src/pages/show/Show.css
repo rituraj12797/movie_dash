@@ -1,5 +1,5 @@
 .showContainer{
-    top: 100px;
+    position: relative;
     height: 980px;
     width: 100%;
     display: flex;
@@ -32,6 +32,11 @@
 }
 .imageCont{
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: 600;
     width: 50%;
     background-color: red;
     border-radius: 25px 0px 0px 25px ;
@@ -43,17 +48,80 @@
     transform: scale(0);
 }
 .formBox{
-    
     height: 100%;
     width: 50%;
     background-color: rgb(29, 27, 27);
     border-radius: 0px 25px 25px 0px ;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cancel{
+    position: relative;
+    top: -35%;
+    left: 65%;
+    border: none;
+    height: 20px;
+    background-color: black;
+    width: 20px;
+    border-radius: 10px;
+}
+.formBox form{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+    flex-direction: column;
+}
+.formHead{
+    height: 20%;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formInput{
+    height: 8%;
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    padding-left: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(58, 58, 58);
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.formInput:focus{
+    outline: none;
+}
+label{
+   width: 100%;
+   display: flex;
+   justify-content: start;
+}
+.formButton{
+    height: 40px;
+    width: 150px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 15px;
+    border: none;
 }
 .imageContainer{
     height: 70%;
     width: 40%;
     display: flex;
+    font-weight: 600;
     justify-content: center;
     align-items: center;
 }
@@ -106,27 +174,96 @@
     flex-direction: column;
     gap: 20px;
 }
-.watch{
+.book{
     height: 6%;
     width: 20%;
-    border-radius: 20px;
     display: flex;
     background-color: red;
     justify-content: center;
+   
     align-items: center;
+    border-radius: 20px;
     gap: 20px;  
+}
+.bookButton{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0);
+    justify-content: center;
+    border: none;
+    color: white;
+    letter-spacing: 0.05rem;
+    font-weight: 600;
+    align-items: center;
     transition: 0.12s all linear;
 }
-.watch:hover{
+.bookButton:hover{
     background-color: rgb(255, 255, 255);
     transform: scale(1.1);
-}
-.watch:hover a{
     color: black;
 }
-.watch a{
-    text-decoration: none;
-    color: white;
-    transition: 0.23s all linear;
 
+@media screen and (max-width:600px) {
+    .showContainer{
+        top: 50px;
+        flex-direction: column;
+        gap: 50px;
+        height: 1100px;
+    }
+    .formContainer{
+        background-color: rgb(0, 0, 0);
+    }
+    .cancel{
+        top: -25%;
+    }
+    .form{
+        width: 90%;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .imageCont{
+        width: 100%;
+        border-radius: 25px 25px 0px 0px;
+    }
+    .formBox{
+        width: 100%;
+        border-radius: 0 0 25px 25px;
+    }
+    .imageCont{
+        font-size: 3rem;
+    }
+    .formInput{
+        height: 30px;
+    }
+    .imageContainer{
+        width: 90%;
+    }
+    .details{
+        width: 90%;
+    }
+    .showHead{
+        font-size: 2rem;
+        width: 100%;
+    }
+    .showExtras{
+        height: 15%;
+        justify-content: center;
+    }
+    .description{
+        height: 80%;
+        text-align: justify;
+        width: 100%;
+    }
+    .book{
+        height: 25%;
+        background-color: rgba(255, 255, 255, 0);
+        width: 100%;
+    }
+    .bookButton{
+        height: 55%;
+        width: 40%;
+        background-color: red;
+    }
 }
