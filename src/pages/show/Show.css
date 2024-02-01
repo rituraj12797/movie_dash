@@ -1,0 +1,132 @@
+.showContainer{
+    top: 100px;
+    height: 980px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    gap: 50px;
+    color: white;
+}
+.formContainer{
+ position: fixed;
+ z-index: 2;
+ height: 100%;
+ width: 100vw;
+ top: 0;
+ left: 0;
+ background-color: rgba(0, 0, 0, 0.581);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.form{
+    height: 80%;
+    width: 65%;
+    border-radius: 26px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imageCont{
+    height: 100%;
+    width: 50%;
+    background-color: red;
+    border-radius: 25px 0px 0px 25px ;
+}
+.invisible{
+    display: hidden;
+    height: 0;
+    width: 0;
+    transform: scale(0);
+}
+.formBox{
+    
+    height: 100%;
+    width: 50%;
+    background-color: rgb(29, 27, 27);
+    border-radius: 0px 25px 25px 0px ;
+
+}
+.imageContainer{
+    height: 70%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    width: 80%;
+}
+.details{
+    height: 70%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+}
+.showHead{
+    height: 20%;
+    font-size: 4rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-bottom: 5px solid red;
+    font-weight: 600;
+    width: 60%;
+}
+.showExtras{
+    height: 10%;
+    width: 100%;
+    font-weight: 600;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+.showRat{
+    height: 40%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.description{
+    height: 40%;
+    width: 80%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.watch{
+    height: 6%;
+    width: 20%;
+    border-radius: 20px;
+    display: flex;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;  
+    transition: 0.12s all linear;
+}
+.watch:hover{
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.1);
+}
+.watch:hover a{
+    color: black;
+}
+.watch a{
+    text-decoration: none;
+    color: white;
+    transition: 0.23s all linear;
+
+}

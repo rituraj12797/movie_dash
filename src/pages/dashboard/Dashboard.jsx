@@ -1,8 +1,9 @@
 import React from 'react'
 import { useEffect } from 'react';
-import ShowCard from '../components/ShowCard';
+import ShowCard from '../../components/showCard/ShowCard';
 import { useDispatch, useSelector } from 'react-redux';
-import { setShows } from '../state/showData/ShowData';
+import { setShows } from '../../state/showData/ShowData';
+import './Dashboard.css'
 export default function Dashboard() {
     const showsData = useSelector(state => state.showsData.shows)
     const dispatch = useDispatch();
@@ -24,8 +25,8 @@ export default function Dashboard() {
         console.log(showsData)
     },[showsData])
   return (
-    <div>
-        <div>
+    <div className='dashContainer'>
+        <div className='moviesContainer'>
             {
                 showsData.map((show,i)=>{
                     return <ShowCard show={show} key={i} />

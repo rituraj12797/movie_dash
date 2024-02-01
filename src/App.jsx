@@ -7,11 +7,10 @@ import {
 } from "react-router-dom";
 
 import Wrapper from './view/Wrapper';
-import Dashboard from './pages/Dashboard';
-import ShowCard from './components/ShowCard';
+import Dashboard from './pages/dashboard/Dashboard';
 import { Provider } from 'react-redux';
 import {store} from './state/store';
-import Show from './pages/Show';
+import Show from './pages/show/Show';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -24,7 +23,6 @@ const router = createBrowserRouter(
 
 
 function App() {
-  console.log("hello")
   return (
     <Provider store={store}>
       <RouterProvider router={router}></RouterProvider>
